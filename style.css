@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-label {
+    font-weight:lighter;
+    background-color: white; /* Background color to match the input */
+    padding: 0 5px; /* Padding to create space around the text */
+    position: absolute;
+    top: -10px; /* Position the label above the input */
+    left: 15px; /* Position the label inside the input */
+    font-size: 0.9em;
+    color:#c0c0b9;
+}
+
+.rounded-border-input {
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px; /* Rounded border */
+    outline: none;
+    font-size: 1em;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+.rounded-border-input:focus {
+    border-color: blue; /* Change border color on focus */
+}
+
+.error {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    color:white;
+    font-weight: bold;
+    border-radius: 10px; /* Rounded corners for select and button */
+    background-color: blue;
+}

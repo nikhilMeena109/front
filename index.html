@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABCD123</title> <!-- Replace 'ABCD123' with your actual roll number -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h2>Data Processor</h2>
+        <div class="input-container">
+            <label for="jsonInput" class="input-label">API Input</label>
+            <input type="text" id="jsonInput" placeholder='Enter JSON data here' class="rounded-border-input"/>
+        </div>
+        <button onclick="submitData()">Submit</button>
+        <p id="error" class="error hidden">Invalid JSON format. Please enter valid JSON.</p>
+
+        <div id="dropdownContainer" class="hidden">
+            <label for="dataSelect">Select Data to Display:</label>
+            <select id="dataSelect" multiple>
+                <option value="alphabets">Alphabets</option>
+                <option value="numbers">Numbers</option>
+                <option value="highest_lowercase_alphabet">Highest Lowercase Alphabet</option>
+            </select>
+            <button onclick="filterResults()">Filter Results</button>
+        </div>
+
+        <div id="resultsContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
